@@ -12,3 +12,7 @@ def col_min(df, col):
     '''
     return df.select(F.min(col)).collect()[0][0]
 
+def col_max(df, col):
+    '''Get the maximum value of a column
+    '''
+    return df.select(F.max(col)).collect()[0][0]
