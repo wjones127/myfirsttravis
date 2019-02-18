@@ -41,7 +41,7 @@ class TestMaxFunc(unittest.TestCase):
 
     def test_int(self):
         result = col_max(test_df, 'col_int')
-        expected = 2
+        expected = 3
         self.assertEqual(result, expected)
 
     def test_date(self):
@@ -51,6 +51,6 @@ class TestMaxFunc(unittest.TestCase):
 
     def test_str(self):
         result = col_max(test_df, 'col_str')
-        expected = 'b'
+        expected = 'c'
         self.assertEqual(result, expected)
 
